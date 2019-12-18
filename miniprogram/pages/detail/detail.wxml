@@ -1,0 +1,14 @@
+<view id="detail">
+  <view id="img">
+    <image mode="aspectFill" src="{{detail.fileID}}"></image>
+  </view>
+  <view id="userInfo">
+  <view id="info">
+    <view id="userImg">
+      <image src="{{detail.avatarUrl}}"></image>
+    </view>
+    <view id="userName">{{detail.nickName}}</view>
+  </view>
+    <view id="comment">{{detail.intro}}</view>
+  </view>
+</view>

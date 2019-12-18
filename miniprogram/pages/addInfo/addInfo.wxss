@@ -1,0 +1,23 @@
+/* miniprogram/pages/addInfo/addInfo.wxss */
+
+#main {
+  width: 750rpx;
+  padding: 20rpx 50rpx;
+  box-sizing: border-box;
+}
+
+.headImg {
+  width: 200rpx;
+}
+
+.headPic{
+  width: 100%;
+  height: 300rpx;
+}
+
+.area{
+  width: 100%;
+  height: 200rpx;
+  border: 1px solid;
+  margin-bottom: 40rpx;
+}

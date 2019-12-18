@@ -1,0 +1,12 @@
+<view id="history">
+    <ul id="comments">
+        <li id="commentOne" wx:for="{{historyList}}" wx:key="index">
+            <text id="comment">
+                {{item.intro}}
+            </text>
+            <text id="btn" bind:tap="del" id="{{item._id}}" data-index="{{index}}">
+                删除
+            </text>
+        </li>    
+    </ul>
+</view>

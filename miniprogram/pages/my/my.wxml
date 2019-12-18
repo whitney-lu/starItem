@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="header">
+    <view class="headPic" wx:if="{{flag}}">
+      <image mode="widthFix" class="pic" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="username">{{userInfo.nickName}}</view>
+    <view>
+      <button wx:if="{{isShow}}" bindgetuserinfo="load" type="primary" size="mini" open-type="getUserInfo">请登录</button>
+    </view>
+  </view>
+
+  <view class="footer">
+    <view class="list">
+      <image src="/images/add-selected.png" mode="widthFix" class="img"></image>
+      <text bindtap="addInformation">添加信息</text>
+    </view>
+    <view class="list">
+      <image src="/images/detail-selected.png" mode="widthFix" class="img" bind:tap="historyInfo"></image>
+      <text>历史信息</text>
+    </view>
+  </view>
+</view>

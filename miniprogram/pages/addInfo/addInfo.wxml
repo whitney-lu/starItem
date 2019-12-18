@@ -1,0 +1,21 @@
+<view id="main">
+  <form bindsubmit="mySubmit">
+    姓名：
+    <input name="name" /> 性别：
+    <radio-group name="sex">
+      <radio value="男" checked>男</radio>
+      <radio value="女">女</radio>
+    </radio-group>
+    <picker mode="region" name="region" bindchange="myRegion" value="{{region}}">
+      地址：{{region[0]}}--{{region[1]}}--{{region[2]}}
+    </picker>
+    <button type="warn" size="mini" bindtap="addImg">添加图片</button>
+    <view class="headPic">
+      <image src="{{localImage}}" mode="widthFix" class="headImg"></image>
+      <input hidden="{{true}}" src="{{localImage}}" value="{{localImage}}" name="localImage"></input>
+    </view>
+    <view>介绍：</view>
+    <textarea name="intro" class="area"></textarea>
+    <button type="primary" form-type="submit" bindtap="onSubmit">提交</button>
+  </form>
+</view>
